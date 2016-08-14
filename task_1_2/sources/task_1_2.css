@@ -1,0 +1,160 @@
+/**********基本格式***********/
+*{
+	font-family:'Microsoft YaHei';
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration:none;
+}
+.auto{
+	margin:0 auto;
+}
+body{
+	background-color:#dedede;
+}
+/**********基本格式***********/
+/**********头部开始***********/
+.body_header{
+	background-color:#333;
+	height:60px;
+}
+.body_header img{
+	margin:5px 0 0 35px;
+}
+.body_header ul{
+	position:absolute;
+	top:0;
+	right:10px;
+}
+.body_header .nav li{
+	float:left;
+	width:82px;
+	padding-right:3px;
+	height:60px;
+	line-height:60px;
+	font-size:12px;
+	display:block;
+	text-align:center;
+}
+.body_header .nav li a{
+	color:#fff;
+}
+.body_header .nav li:hover{
+	background-color:#535353;
+	border-bottom:1px solid blue;
+}
+/**********头部开始***********/
+/**********主体开始***********/
+.article1,.article2,.article3,.article4,.aside{
+	background-color:white;
+	box-shadow:1px 1px 2px 1px #888;
+	padding:20px;margin:30px;
+}
+.article1 h3,.article2 h3,.article3 h3,.article4 h3{
+	padding:25px 0 20px 0;
+	color:#535353;
+}
+.article1 .author,.article2 .author,.article4 .author{
+	font-size:13px;
+	color:#696969;
+}
+.article1 .pro1,.article2 .pro1{
+	text-indent:2em;
+	padding:20px 20px 10px 0;
+}
+.article1 .pro2{
+	text-indent:2em;
+	padding:10px 20px 20px 0;
+}
+.article1 img{
+	padding:10px 20px 10px 0;
+	float:left;
+	height:247px;
+}
+.article2 ul{
+	padding:20px 0;
+}
+.article2 ul li{
+	list-style-type:none;
+}
+.article2 img{
+	padding:10px 0 0 0;
+}
+.article3 dd{
+	border:1px solid #dedede;
+	width:190px;
+	text-align:center;
+	padding:5px;
+	margin:20px 0 20px 40px;
+	font-size:12px;
+}
+.article3 dd img{
+	height:150px;
+	margin:10px auto;
+}
+.article4 ol{
+	padding:20px;
+}
+.article4 table{
+	width:100%;
+	border-collapse:collapse;/*合并边框为一条线*/
+}
+.article4 table tr{
+	border:1px solid #ccc;
+}
+.article4 table tr th{
+	background-color:#333;
+	color:white;
+}
+.article4 table .tr td{
+	background-color:#ccc;
+}
+/**********主体结束***********/
+/**********侧栏开始***********/
+.aside .p1{
+	font-weight:bold;
+	border-left:3px solid #ccc;
+	padding:10px 10px;
+}
+.aside .form .div{
+	font-size:12px;
+	padding:10px 0;
+}
+.aside .form label{
+	float:left;
+    width:35%;
+    padding-right:15px;
+	text-align:right;
+}
+.aside .form p{
+	margin-left:35%;
+    padding-left:15px;
+    color: #aaa;
+}
+.aside textarea{
+	width:50%;
+	height:100px;
+	font-size:12px;
+}
+.aside .submit{
+	width:100%;
+	height:40px;
+	background-color:#125afe;
+	color:white;
+	font-size:18px;
+	border:none;
+	border-radius:15px;
+}
+.aside .submit:hover{
+	background-color:#125abc;
+}
+/**********底部开始***********/
+.body_footer{
+	height:60px;
+	background-color:#333;
+	text-align:center;
+	line-height:60px;
+	color:white;
+}
+/**********底部结束***********/

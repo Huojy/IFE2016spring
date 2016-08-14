@@ -1,0 +1,99 @@
+*{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	padding:0;
+	margin:0;
+}
+body{
+	font:16px "微软雅黑";
+	font-weight:bold;
+}
+table{
+	border:none;
+	margin:20px 0 50px 30px;
+	width:280px;
+}
+thead tr td{
+	background:black;
+	color:#fff;
+	font-weight:bold;
+}
+tbody tr:nth-of-type(even) td{
+	background:RGB(203,203,203);
+}
+tbody tr:nth-of-type(-n+3) td{
+	color:red;
+}
+.textbox{
+	margin:0 0 50px 30px;
+	width:100px;
+	transition:width 2s;
+	-moz-transition:width 2s;
+	-webkit-transition:width 2s;
+	-o-transition:width 2s;
+}
+.textbox:focus{
+	width:200px;
+}
+.main{
+	margin-left:30px;
+	width:271px;
+	height:110px;
+	background:red;
+	overflow:hidden;
+	position:relative;
+}
+.btns a{
+	width:27px;
+	height:27px;
+	text-align:center;
+	line-height:27px;
+	background-color:rgba(255,255,255,0.4);/*使子元素透明度脱离父元素*/
+	color:#fff;
+	display:inline-block;
+	float:right;
+	margin-left:2px;
+	position:relative;
+	top:83px;
+	cursor:pointer;
+	z-index:100;
+	text-decoration:none;
+}
+li{
+	list-style:none;
+	display:inline-block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:-100%;
+	animation:mysecond 1s linear;
+	-moz-animation:mysecond 1s linear;
+	-webkit-animation:mysecond 1s linear;
+	-o-animation:mysecond 1s linear;
+}
+li:target{
+	left:0%;
+	animation:myfirst 1s linear;
+	-moz-animation:myfirst 1s linear;
+	-webkit-animation:myfirst 1s linear;
+	-o-animation:myfirst 1s linear;
+}
+li:nth-child(1){
+	background-color:red;
+}
+li:nth-child(2){
+	background-color:green;
+}
+li:nth-child(3){
+	background-color:blue;
+}
+@keyframes myfirst{
+	from{left:100%;}
+	to{left:0%;}
+}
+@keyframes mysecond{
+	from{left:0%;}
+	to{left:-100%;}
+}
